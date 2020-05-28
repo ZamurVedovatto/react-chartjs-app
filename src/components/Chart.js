@@ -29,7 +29,18 @@ export default class Chart extends Component {
         <Bar
           data={chartData}
           options={{
-            maintainAspectRatio: false
+            title: {
+              display: true,
+              text: 'Largest Cities',
+              fontSize: 25
+            },
+            legend: {
+              display: true,
+              position: 'right',
+              labels: {
+                fontColor: "#000000"
+              }
+            }
           }}
         />        
       </div>
